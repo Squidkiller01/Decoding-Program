@@ -1,0 +1,32 @@
+Changelog for Version 2.0
+
+New Features:
+
+Improved user interface with clear menu options for encryption and decryption.
+Enhanced error handling for invalid user inputs.
+Added functionality for encoding messages using various ciphers.
+Implemented separate functions for encoding and decoding, improving code modularity and readability.
+Added support for encoding messages using Caesar Cipher, Base64, Atbash Cipher, and ROT13.
+Included option to choose the character set for Base64 encoding.
+Implemented functions to handle encryption and decryption of messages based on user-selected ciphers.
+Added capability to encrypt messages using Caesar Cipher, Base64, Atbash Cipher, and ROT13.
+Changes and Improvements:
+
+Refactored decryption functions to optimize code structure and readability.
+Standardized variable naming conventions for consistency and clarity.
+Implemented a variable initialization function to improve code maintainability and readability.
+Updated Caesar cipher decryption function to handle shifts beyond the range of 0 to 25.
+Enhanced error handling for invalid character sets during Base64 decoding.
+Improved the user experience with clearer prompts and instructions.
+Bug Fixes:
+
+Fixed issue with quitting the program not functioning as expected.
+Addressed potential errors with improper input handling during cipher selection.
+Corrected handling of input cases for cipher selection to ensure case insensitivity.
+Version 2.0
+This version introduces significant enhancements to the program, including a revamped user interface, expanded functionality for both encryption and decryption, and improved error handling. The code has been refactored for better modularity and readability, with separate functions for encoding and decoding using various ciphers. Additionally, bugs related to program termination and input validation have been addressed, providing a more seamless user experience.
+
+
+
+
+
