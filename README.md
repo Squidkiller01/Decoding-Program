@@ -17,13 +17,12 @@ To run the program:
 6. For some methods (e.g., Caesar Cipher), you may need to provide additional information such as the shift value.
 7. The program will display the decoded plaintext.
 
-### Available Decryption Methods
-1. Caesar Cipher: Decrypts text encrypted using the Caesar Cipher method. Requires specifying the shift value used for encryption.
-2. Base64: Decodes text encoded using the Base64 encoding method.
-3. Atbash Cipher: Decrypts text encrypted using the Atbash Cipher method.
-4. ROT13: Decrypts text encrypted using the ROT13 substitution cipher method.
-5. Keyword Cipher: Decrypts text encrypted using the Keyword Cipher method. Requires specifying the keyword used for encryption.
+### Available Ciphers
+1. Caesar Cipher: Decrypts/Encrypts text encrypted using the Caesar Cipher method. Requires specifying the shift value used for encryption.
+2. Base64: Decodes/Encrypts text encoded using the Base64 encoding method.
+3. Atbash Cipher: Decrypts/Encrypts text encrypted using the Atbash Cipher method.
+4. ROT13: Decrypts/Encrypts text encrypted using the ROT13 substitution cipher method.
 
 Additional Notes
-- The program supports various character encodings, including UTF-8, ASCII, ISO-8859-1, and more. You can specify the character encoding method when decoding Base64-encoded text.
+- The Base64 cipher supports both UTF-8 and ASCII character encodings. You can specify your choice when selecting the Base64 cipher in the program
 - Feel free to customize or extend the program as needed to suit your requirements.
