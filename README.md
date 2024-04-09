@@ -3,7 +3,7 @@
 ## Year: 2024
 
 ### Overview
-This Python program is designed to decode or encode text using various encryption and encoding methods. It offers the flexibility to choose from a range of decryption methods, including Caesar Cipher, Base64, Atbash Cipher, ROT13, and Keyword Cipher.
+This Python program is designed to decode or encode text using various encryption and encoding methods. It offers the flexibility to choose from a range of decryption methods, including Caesar Cipher, Base64, Atbash Cipher, and ROT13 Cipher.
 
 ### Usage
 To run the program:
