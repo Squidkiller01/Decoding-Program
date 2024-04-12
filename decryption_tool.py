@@ -227,7 +227,7 @@ def main():
     plaintext, ciphertext, keyword, encryption_method = variable_initialization()
 
     while encryption_method == None:
-        encryption_method = input("\nWould you like to encrypt or decrypt a message? Type 'encrypt' or 'decrypt': ")
+        encryption_method = input("\nWould you like to encrypt or decrypt a message? Type 'encrypt', 'decrypt', or 'quit' to exit the program: ")
         encryption_method.lower()
         
         if encryption_method == "encrypt": # Encoding a cipher
@@ -246,7 +246,8 @@ def main():
                 if encode in exit_keywords: #Quitting the program
                     quit
                 elif encode in back_keywords: #Leaving the menu
-                    break
+                    encryption_method = None
+                    continue
                 elif encode == "caesar" or encode == "2": #Caesar Cipher Encoding
                     plaintext = input("\nEnter the plaintext: ")
                     shift = int(input("\nEnter the Caesar cipher shift (Must be an integer) \nLeft = Negative (-) Number \nRight = Positive Number \nShift: "))
@@ -263,7 +264,7 @@ def main():
                     print("\nInvalid choice")
 
                 # Reset variable so the program will repeat until the user says otherwise
-                decode = None
+                encode = None
                 
         elif encryption_method == "decrypt": # Decoding a cipher
             decode = None
@@ -280,7 +281,8 @@ def main():
                 if decode in exit_keywords: #Quitting the program
                     quit
                 elif decode in back_keywords: #leaving the menu
-                    break
+                    encryption_method == None
+                    continue
                 elif decode == "caesar" or decode == "2": #Caesar Cipher Decoding
                     ciphertext = input("\nEnter the ciphertext: ")
                     shift = int(input("\nEnter the Caesar cipher shift (Must be an integer) \nLeft = Negative (-) Number \nRight = Positive Number \nShift: "))
@@ -298,6 +300,8 @@ def main():
                 
                 # Reset variable so the program will repeat until the users says otherwise
                 decode = None
+        elif encryption_method in exit_keywords:
+            quit
         else:
             print("Invalid choice")
             encryption_method = None
